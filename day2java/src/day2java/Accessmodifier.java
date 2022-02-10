@@ -1,17 +1,23 @@
 package day2java;
 
+import java.util.Scanner; // to import scanner from library
+
 public class Accessmodifier {
-	int nos;
-	float hrs;
-	int noc;
-	private void displayStudents() {//m1
-		System.out.println("Number of Students");
+	int noe;
+	float wrkhrs;
+	int nop;
+	Scanner Sc = new Scanner (System.in); //syntax for scanner
+	private void displayEmployees() {//m1
+		System.out.println("Number of Employees");
+		noe  = Sc.nextInt();
 	}
-	void displayHours() {//m2
-		System.out.println("Number of Hours");
+	void displayWorkingHours() {//m2
+		System.out.println("Number of Working Hours");
+		wrkhrs  = Sc.nextInt();
 	}
-	void displayClass() {//m3
-		System.out.println("Number of Class");
+	void displayProject() {//m3
+		System.out.println("Number of Project");
+		nop  = Sc.nextInt();
 	}
 
 
@@ -20,8 +26,8 @@ public class Accessmodifier {
 //objectsyntax
     // classname variable = variable(new) constructor();		
 		Accessmodifier am = new Accessmodifier();
-		am.displayStudents();
-		am.displayHours();
-		am.displayClass();
+		am.displayEmployees();
+		am.displayWorkingHours();
+		am.displayProject();
 	}
 }
